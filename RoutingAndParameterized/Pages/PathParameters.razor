@@ -1,0 +1,31 @@
+﻿@page "/path-parameters/{param1:bool}/{param2:datetime}/{param3:decimal}/{param4:float}/{param5:guid}/{param6:int}/{param7:long}/{param8:short}/{param9:double}/{param10}"
+
+<h3>PathParameters</h3>
+<div>Param1: @Param1</div>
+<div>Param2: @Param2</div>
+<div>Param3: @Param3</div>
+<div>Param4: @Param4</div>
+<div>Param5: @Param5</div>
+<div>Param6: @Param6</div>
+<div>Param7: @Param7</div>
+<div>Param8: @Param8</div>
+<div>Param9: @Param9</div>
+<div>Param10: @Param10</div>
+
+@code {
+    public bool Param1 { get; set; }
+    public DateTime Param2 { get; set; }
+    public decimal Param3 { get; set; }
+    public float Param4 { get; set; }
+    public Guid Param5 { get; set; }
+    public int Param6 { get; set; }
+    //public Int32 Param6 { get; set; }
+    public long Param7 { get; set; }
+    //public Int64 Param7 { get; set; }
+    public short Param8 { get; set; }
+    //public Int16 Param8 { get; set; }
+    public double Param9 { get; set; }
+    //public Double Param9 { get; set; }
+    public string Param10 { get; set; } = "";
+    //public String Param10 { get; set; }
+}
